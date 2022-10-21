@@ -140,7 +140,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/文章/" style="color: #00bcd4">
+                <a href="/tags/文章/" style="color: #ff7d73">
                     文章
                 </a>
             </span>
@@ -155,7 +155,7 @@
 </blockquote>
 <p><strong>但这些都是针对树莓派官方提供的系统的解决方案，那么有没有一种针对 Ubuntu 的 type-c 一线连解决方案呢？</strong></p>
 <h2 id="刷入镜像"><a href="#刷入镜像" class="headerlink" title="刷入镜像"></a>刷入镜像</h2><p>其实也是有的，在 <a target="_blank" rel="noopener" href="https://github.com/techcraftco/rpi-usb-gadget">这个仓库</a> 中其实已经有人帮我们做了一个配置好 type-c otg 的树莓派 Ubuntu Server 镜像，只需要进入该仓库的 <a target="_blank" rel="noopener" href="https://github.com/techcraftco/rpi-usb-gadget/releases">Release</a> 页面即可获取，接下来只需要走一遍已经刻入 DNA 里的刷入树莓派镜像流程即可，不过需要注意的是，如果对 linux 不是很熟悉，可以先在官方提供的工具中先把 Wi-Fi 连上，省的还要在终端里自己写配置文件。</p>
-<p><img src="/assets/20221021_174911_image.png" alt="image"></p>
+<p><img src="/1-wire-solution/20221021_174911_image.png" alt="image"></p>
 <p>安装完后通过你能想到的任何方式（ssh, HDMI, etc.）进入终端，开始桌面环境的安装（如果你习惯不装桌面，那你已经可以靠自己解决接下来的所有问题了。）</p>
 <hr>
 <h2 id="桌面环境安装"><a href="#桌面环境安装" class="headerlink" title="桌面环境安装"></a>桌面环境安装</h2><p>首先换源，用你想用的编辑器打开或者直接用 linux 文件编辑指令都可以</p>
@@ -235,9 +235,9 @@ sudo systemctl start vncserver-virtuald.service
 sudo systemctl start vncserver-x11-serviced.service
 </code></pre>
 <p>重启系统即可通过 VNC 连接至树莓派啦，让我们分别试试通过 Wi-Fi 的 VNC 远程连接和直接使用 type-c 一线连后通过 iPad VNC 连接至树莓派</p>
-<p><img src="/assets/20221022_010600_image.png" title="通过 Wi-Fi 的 VNC 远程连接"></p>
+<p><img src="/1-wire-solution/20221022_010600_image.png" title="通过 Wi-Fi 的 VNC 远程连接"></p>
 <p>需要注意的一点是 iPad 通过 type-c 连接上树莓派后会在设置中多出来一个 “以太网” 选项，如果点进去后能看到 IP 地址则说明配置成功，只需要在任意 VNC 客户端中输入地址 <code>10.55.0.1</code> 即可连接，如果没有看到 “以太网” 选项，那你应该重新阅读此文，检查是否有什么地方有所疏漏（或者本篇文章有什么地方有所疏漏）。若果你已经看到以太网选项但是一段时间后该选项自动消失了，那你应该试试用上面的指令重新启用 VNC Server 服务，重启然后重新连接 iPad。</p>
-<p><img src="/assets/20221022_013419_image.png" title="iPad 以太网选项"><br><img src="/assets/20221022_013717_IMG_0069.PNG" title="type-c 一线连"></p>
+<p><img src="/1-wire-solution/20221022_013419_image.png" title="iPad 以太网选项"><br><img src="/1-wire-solution/20221022_013717_IMG_0069.PNG" title="type-c 一线连"></p>
 
     </div>
     

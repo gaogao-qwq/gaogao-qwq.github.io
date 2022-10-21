@@ -140,8 +140,29 @@
             
             <span class="tag">
                 
-                <a href="/tags/文章/" style="color: #ff7d73">
+                <a href="/tags/文章/" style="color: #03a9f4">
                     文章
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/树莓派/" style="color: #03a9f4">
+                    树莓派
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Ubuntu/" style="color: #ff7d73">
+                    Ubuntu
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/折腾/" style="color: #00bcd4">
+                    折腾
                 </a>
             </span>
             
@@ -154,6 +175,8 @@
 <p>国内也有人制作了 <a target="_blank" rel="noopener" href="https://github.com/TANG617/RaspberryPi-One-Wire">一键式 .sh 脚本</a> 和视频<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Au41197TT?share_source=copy_web&vd_source=3dfe10e0ea7d375042c58f23282c5c53">视频链接</a>。</p>
 </blockquote>
 <p><strong>但这些都是针对树莓派官方提供的系统的解决方案，那么有没有一种针对 Ubuntu 的 type-c 一线连解决方案呢？</strong></p>
+<span id="more"></span>
+
 <h2 id="刷入镜像"><a href="#刷入镜像" class="headerlink" title="刷入镜像"></a>刷入镜像</h2><p>其实也是有的，在 <a target="_blank" rel="noopener" href="https://github.com/techcraftco/rpi-usb-gadget">这个仓库</a> 中其实已经有人帮我们做了一个配置好 type-c otg 的树莓派 Ubuntu Server 镜像，只需要进入该仓库的 <a target="_blank" rel="noopener" href="https://github.com/techcraftco/rpi-usb-gadget/releases">Release</a> 页面即可获取，接下来只需要走一遍已经刻入 DNA 里的刷入树莓派镜像流程即可，不过需要注意的是，如果对 linux 不是很熟悉，可以先在官方提供的工具中先把 Wi-Fi 连上，省的还要在终端里自己写配置文件。</p>
 <p><img src="/2022/10/22/1-wire-solution/20221021_174911_image.png"></p>
 <p>安装完后通过你能想到的任何方式（ssh, HDMI, etc.）进入终端，开始桌面环境的安装（如果你习惯不装桌面，那你已经可以靠自己解决接下来的所有问题了。）</p>

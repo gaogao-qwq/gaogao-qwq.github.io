@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-        <title>搞搞的小站</title>
+        <title>Ubuntu on Raspberry Pi4 Type-C 一线连接 iPad 解决方案 | 搞搞的小站</title>
         <meta name="author" content="gaogao_qwq">
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -119,47 +119,37 @@
 </nav>
                     </div>
                     <div id="main">
-                        <div id="home-head">
-    <div id="home-background" style="background-image: url(/78127035_p0.png)"></div>
-    
-    <div id="home-info" class="home-info" @click="home_click">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>搞搞的小站</h1>
-                <h3>从现实的创伤中夺回人民性。</h3>
-                <h5></h5>
-            </div>
-        </span>
+                        
+<div class="article">
+    <div>
+        <h1>Ubuntu on Raspberry Pi4 Type-C 一线连接 iPad 解决方案 </h1>
     </div>
-    
-</div>
-
-<div id="home-posts-wrap" class="">
-    <div id="home-posts">
-        <div id="posts">
-            
-
-<div class="post">
-    <a href="/2022/10/22/Raspi4-with-Ubuntu-1-wire-connect-to-iPad/1-wire-solution/">
-        <h2 class="post-title">Ubuntu on Raspberry Pi4 Type-C 一线连接 iPad 解决方案</h2>
-    </a>
-    <div class="category-and-date">
-        
+    <div class="info">
         <span class="date">
             <span class="icon">
                 <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
             </span>
             2022/10/22
         </span>
-    </div>
-    <div class="excerpt">
-        <div class="content" v-pre>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+            </span>
             
-            <h1 id="Ubuntu-on-Raspberry-Pi4-type-c-一线连接-iPad-解决方案"><a href="#Ubuntu-on-Raspberry-Pi4-type-c-一线连接-iPad-解决方案" class="headerlink" title="Ubuntu on Raspberry Pi4 type-c 一线连接 iPad 解决方案"></a>Ubuntu on Raspberry Pi4 type-c 一线连接 iPad 解决方案</h1><blockquote>
+            <span class="tag">
+                
+                <a href="/tags/文章/" style="color: #00bcd4">
+                    文章
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+    <div class="content" v-pre>
+        <h1 id="Ubuntu-on-Raspberry-Pi4-type-c-一线连接-iPad-解决方案"><a href="#Ubuntu-on-Raspberry-Pi4-type-c-一线连接-iPad-解决方案" class="headerlink" title="Ubuntu on Raspberry Pi4 type-c 一线连接 iPad 解决方案"></a>Ubuntu on Raspberry Pi4 type-c 一线连接 iPad 解决方案</h1><blockquote>
 <p>其实在很早就有人发现可以让树莓派4通过一条 type-c 线将 iPad 和树莓派置于同一局域网下了，如果没记错的话大概是 <a target="_blank" rel="noopener" href="https://www.hardill.me.uk/wordpress/2019/11/02/pi4-usb-c-gadget/">这篇文章</a>，也有人基于这篇文章做了个视频<a target="_blank" rel="noopener" href="https://youtu.be/A3qn1nqw-Gw/">视频链接</a>。</p>
 <p>国内也有人制作了 <a target="_blank" rel="noopener" href="https://github.com/TANG617/RaspberryPi-One-Wire">一键式 .sh 脚本</a> 和视频<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Au41197TT?share_source=copy_web&vd_source=3dfe10e0ea7d375042c58f23282c5c53">视频链接</a>。</p>
 </blockquote>
@@ -249,120 +239,12 @@ sudo systemctl start vncserver-x11-serviced.service
 <p>需要注意的一点是 iPad 通过 type-c 连接上树莓派后会在设置中多出来一个 “以太网” 选项，如果点进去后能看到 IP 地址则说明配置成功，只需要在任意 VNC 客户端中输入地址 <code>10.55.0.1</code> 即可连接，如果没有看到 “以太网” 选项，那你应该重新阅读此文，检查是否有什么地方有所疏漏（或者本篇文章有什么地方有所疏漏）。若果你已经看到以太网选项但是一段时间后该选项自动消失了，那你应该试试用上面的指令重新启用 VNC Server 服务，重启然后重新连接 iPad。</p>
 <p><img src="/assets/20221022_013419_image.png" title="iPad 以太网选项"><br><img src="/assets/20221022_013717_IMG_0069.PNG" title="type-c 一线连"></p>
 
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/文章/" style="color: #00a596">
-                文章
-            </a>
-        </span>
-        
-    </div>
-    <a href="/2022/10/22/Raspi4-with-Ubuntu-1-wire-connect-to-iPad/1-wire-solution/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2022/09/10/MigratetoGithubPages/">
-        <h2 class="post-title">迁移至Github Pages</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
-            </span>
-            2022/9/10
-        </span>
-    </div>
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/文章/" style="color: #ffa2c4">
-                文章
-            </a>
-        </span>
-        
-    </div>
-    <a href="/2022/09/10/MigratetoGithubPages/" class="go-post">阅读全文</a>
-</div>
-
-             
-<div class="page-current">
-    <div class="prev">
-        
-    </div>
-    <div class="page-index">
-        
-        <span class="current">
-            1
-        </span>
-        
-    </div>
-    <div class="next">
-        
-    </div>
-</div>
-        </div>
     </div>
     
-    <div id="home-card">
-        <div id="card-div">
-    <div class="card-style" style="width: 300px">
-        <div class="avatar">
-            <img src="/avator.png " alt="avatar">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css">
+    <div id="comment">
+        <div id="gitalk-container">
         </div>
-        <div class="name">
-            gaogao_qwq
-        </div>
-        <div class="descriptions">
-            
-            <div class="description">
-                一般通过计科学生
-            </div>
-            
-        </div>
-        <div class="icon-links">
-            
-            <span class="icon-link">
-                <a target="_blank" rel="noopener" href="https://github.com/gaogao-qwq">
-                    <i class="fa-brands fa-github fa-fw"></i>
-                </a>
-            </span>
-            
-            <span class="icon-link">
-                <a target="_blank" rel="noopener" href="https://steamcommunity.com/id/gaogao_qwq">
-                    <i class="fa-brands fa-steam-symbol fa-fw"></i>
-                </a>
-            </span>
-            
-        </div>
-        <div class="friend-links">
-            
-        </div>
-    </div>
-</div>
     </div>
     
 </div>
@@ -399,6 +281,24 @@ sudo systemctl start vncserver-x11-serviced.service
         <script src="/js/particlex.js"></script>
         <script src="/js/showimg.js"></script>
         
+<script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script>
+<script>
+    var clientID = "d5c05d0a0b93fe91ceec", clientSecret = "4d054bdf41d2bb333a1efe89d3af1e47d1694906";
+    
+    const gitalk = new Gitalk({
+        clientID: clientID,
+        clientSecret: clientSecret,
+        repo: "gitalk-comments",
+        owner: "gaogao-qwq",
+        admin: ["gaogao-qwq"],
+        language: "zh-CN",
+        id: location.pathname,
+        distractionFreeMode: false,
+        
+    })
+    gitalk.render("gitalk-container")
+</script>
+
 
     </body>
 </html>
